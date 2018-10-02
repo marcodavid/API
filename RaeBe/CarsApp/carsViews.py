@@ -32,6 +32,7 @@ class PostForGetCarByID(APIView):
 		snippets = TblCar.objects.filter(id_clients = pk)
 		serializer = CarsSerializer(snippets, many=True)
 		return Response(serializer.data)
+
 class PostCar(APIView):
 	def post(self, request, format=None):
 		serializer = CarsSerializer(data=request.data)

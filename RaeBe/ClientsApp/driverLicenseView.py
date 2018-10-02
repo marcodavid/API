@@ -45,7 +45,7 @@ class PutDriverLicenseForUpdate(ObtainAuthToken):
 
 class DeleteDriverLicense(ObtainAuthToken):
 	def delete(self, request, format=None):
-		pk = request.data.get("id_DriverLicense")
+		pk = request.data.get("id_clients")
 		TblDriverlicense = genericMethods.get_object(pk)
 		TblDriverlicense.delete()
 		return Response(status=status.HTTP_204_NO_CONTENT)
