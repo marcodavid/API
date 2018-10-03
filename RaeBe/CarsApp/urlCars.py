@@ -7,7 +7,7 @@ from .  import carsViews
 urlpatterns = [
     url(r'^GetCars/$', carsViews.GetCars.as_view()),#get all cars
     url(r'^PostCar/$', carsViews.PostCar.as_view()),  # get all cars
-    url(r'^PostForGetCarByID/$', carsViews.PostForGetCarByID.as_view()),  # post a car
+    url(r'^GetCarByID/$', carsViews.GetCarByID.as_view()),  # post a car
 
 ]
 

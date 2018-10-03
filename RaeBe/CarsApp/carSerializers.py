@@ -10,8 +10,3 @@ class CarsSerializer(serializers.ModelSerializer):
         model = TblCar
         fields = '__all__'
 
-class CarsByIDSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = TblCar
-        fields = 'id_clients'
