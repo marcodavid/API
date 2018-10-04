@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^GetCars/$', carsViews.GetCars.as_view()),#get all cars
     url(r'^PostCar/$', carsViews.PostCar.as_view()),  # get all cars
     url(r'^GetCarByID/$', carsViews.GetCarByID.as_view()),  # post a car
+    url(r'^PutCarForUpdate/$', carsViews.PutCarForUpdate.as_view()),  # post a car
 
 ]
 

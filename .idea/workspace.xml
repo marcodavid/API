@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99485109-a0f3-4cf8-90d1-d10c86acdbc3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/RaeBe/CarsApp/carSerializers.py" afterPath="$PROJECT_DIR$/RaeBe/CarsApp/carSerializers.py" />
       <change beforePath="$PROJECT_DIR$/RaeBe/CarsApp/carsViews.py" afterPath="$PROJECT_DIR$/RaeBe/CarsApp/carsViews.py" />
       <change beforePath="$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py" afterPath="$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py" />
     </list>
@@ -18,14 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="carsViews.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="carsViews.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carsViews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            <state relative-caret-position="88">
+              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="21" />
               <folding>
                 <element signature="e#1#30#0" expanded="true" />
-                <marker date="1538528573960" expanded="true" signature="432:447" ph="..." />
+                <marker date="1538615546237" expanded="true" signature="432:447" ph="..." />
               </folding>
             </state>
           </provider>
@@ -35,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carSerializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,9 +43,11 @@
       <file leaf-file-name="driverLicenseView.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/driverLicenseView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="43" selection-end-column="78" />
+              <folding>
+                <element signature="e#1#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urlCars.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urlCars.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="165">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,16 +149,16 @@
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/clientSerializers.py" />
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/addressView.py" />
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/clientModels.py" />
-        <option value="$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py" />
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/carSerializers.py" />
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/driverLicenseView.py" />
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/carsViews.py" />
+        <option value="$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1030" />
-    <option name="y" value="-280" />
+    <option name="x" value="1014" />
+    <option name="y" value="-197" />
     <option name="width" value="1366" />
     <option name="height" value="728" />
   </component>
@@ -669,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,7 +678,7 @@
         <state relative-caret-position="585">
           <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding>
-            <element signature="e#1#28#0" expanded="true" />
+            <element signature="e#1#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,9 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding>
-            <element signature="e#1#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -715,42 +709,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carSerializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/driverLicenseView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="43" selection-end-column="78" />
+          <folding>
+            <element signature="e#1#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carsViews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        <state relative-caret-position="88">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="21" />
           <folding>
             <element signature="e#1#30#0" expanded="true" />
-            <marker date="1538528573960" expanded="true" signature="432:447" ph="..." />
+            <marker date="1538615546237" expanded="true" signature="432:447" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
