@@ -12,11 +12,13 @@ urlpatterns = [
     url(r'^PostClientToLogin/$', clientViews.PostClientToLogin.as_view()),  #post email and password(login)  and response  json with all user information
     url(r'^PutClientForUpdate/$', clientViews.PutClientForUpdate.as_view()),
     url(r'^DeleteClient/$', clientViews.DeleteClient.as_view()),  #post email and password(login)  and response  json with all user information
+
     url(r'^GetAllAddress/$', addressView.GetAllAddress.as_view()),  # get all address ,post new address
     url(r'^GetAddressByClient/$', addressView.GetAddressByClient.as_view()),  # get all address ,post new address
     url(r'^PostAddress/$', addressView.PostAddress.as_view()),  # get all address ,post new address
     url(r'^PutAddressForUpdate/$', addressView.PutAddressForUpdate.as_view()),  # get all address ,post new address
     url(r'^DeleteAddress/$', addressView.DeleteAddress.as_view()),  # get all address ,post new address
+
     url(r'^GetDriverLicenseByClient/$', driverLicenseView.GetDriverLicenseByClient.as_view()),  # get all address ,post new address
     url(r'^PostDriverLicense/$', driverLicenseView.PostDriverLicense.as_view()),  # get all address ,post new address
     url(r'^PutDriverLicenseForUpdate/$', driverLicenseView.PutDriverLicenseForUpdate.as_view()),  # get all address ,post new address
