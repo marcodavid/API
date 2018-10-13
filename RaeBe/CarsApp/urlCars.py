@@ -2,7 +2,7 @@
 
 from django.conf.urls import url
 from rest_framework.urlpatterns import format_suffix_patterns
-from .  import carsViews,carsImagesView,policyView
+from .  import carsViews,carsImagesView,policyView,coverageView
 #both for each view
 urlpatterns = [
     url(r'^GetCars/$', carsViews.GetCars.as_view()),#get all cars
@@ -15,6 +15,12 @@ urlpatterns = [
     url(r'^PostPolicy/$', policyView.PostPolicy.as_view()),  # get all cars
     url(r'^GetPolicyByID/$', policyView.GetPolicyByID.as_view()),  # post a car
     url(r'^PutPolicyForUpdate/$', policyView.PutPolicyForUpdate.as_view()),
+
+    url(r'^PostCoverage/$', coverageView.PostCoverage.as_view()),  # get all cars
+    url(r'^GetCoverageByID/$', coverageView.GetCoverageByID.as_view()),  # get all cars
+    url(r'^PutCoverageForUpdate/$', coverageView.PutCoverageForUpdate.as_view()),  # get all cars
+
+
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

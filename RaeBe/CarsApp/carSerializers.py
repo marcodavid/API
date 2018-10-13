@@ -23,6 +23,9 @@ class PolicySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CoverageSerializer(serializers.ModelSerializer):
+    def __init__(self, *args, **kwargs):
+        many = kwargs.pop('many', True)
+        super(CoverageSerializer, self).__init__(many=many, *args, **kwargs)
 
     class Meta:
         model =  RelationsCoverage
