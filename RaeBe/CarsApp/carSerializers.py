@@ -10,8 +10,23 @@ class CarsSerializer(serializers.ModelSerializer):
         model = TblCar
         fields = '__all__'
 
-class CarsByIDSerializer(serializers.ModelSerializer):
+class CarsImagesSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = TblCar
-        fields = 'id_clients'
+        model = RelationsCarimages
+        fields = '__all__'
+
+class PolicySerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = TblPolicy
+        fields = '__all__'
+
+class CoverageSerializer(serializers.ModelSerializer):
+    def __init__(self, *args, **kwargs):
+        many = kwargs.pop('many', True)
+        super(CoverageSerializer, self).__init__(many=many, *args, **kwargs)
+
+    class Meta:
+        model =  RelationsCoverage
+        fields = '__all__'

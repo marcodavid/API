@@ -45,20 +45,31 @@ class TblCar(models.Model):
         db_table = 'tbl_car'
 
 
-class TblPolicy(models.Model):
-    id_policy = models.IntegerField(db_column='id_Policy', primary_key=True)  # Field name made lowercase.
+class RelationsCarimages(models.Model):
     id_car = models.IntegerField(db_column='id_Car')  # Field name made lowercase.
+    urlimg = models.CharField(db_column='UrlImg', max_length=100)  # Field name made lowercase.
+    file = models.FileField(upload_to='C:/Users/David Sandoval/Desktop/API/RaeBe/Files/car-images')
+
+    class Meta:
+        managed = False
+        db_table = 'relations_carimages'
+
+
+class TblPolicy(models.Model):
+    id_policy = models.AutoField(db_column='id_Policy', primary_key=True)  # Field name made lowercase.
+    id_car = models.CharField(db_column='id_Car', max_length=11)  # Field name made lowercase.
     clientpolicynumber = models.IntegerField(db_column='ClientPolicyNumber')  # Field name made lowercase.
-    policy = models.IntegerField(db_column='Policy')  # Field name made lowercase.
     company = models.CharField(db_column='Company', max_length=50)  # Field name made lowercase.
-    cis = models.IntegerField(db_column='CIS')  # Field name made lowercase.
-    clientpolicyname = models.IntegerField(db_column='ClientPolicyName')  # Field name made lowercase.
-    validationdatestart = models.DateTimeField(db_column='ValidationDateStart')  # Field name made lowercase.
-    validationdateend = models.DateTimeField(db_column='ValidationDateEnd')  # Field name made lowercase.
+    clientpolicyname = models.CharField(db_column='ClientPolicyName', max_length=50)  # Field name made lowercase.
+    validationdatestart = models.DateField(db_column='ValidationDateStart')  # Field name made lowercase.
+    validationdateend = models.DateField(db_column='ValidationDateEnd')  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'tbl_policy'
+
+
+
 
 class RelationsCoverage(models.Model):
     id_coverage = models.AutoField(db_column='id_Coverage', primary_key=True)  # Field name made lowercase.
@@ -68,15 +79,6 @@ class RelationsCoverage(models.Model):
     deductibles = models.FloatField(db_column='Deductibles')  # Field name made lowercase.
 
     class Meta:
-	    managed = False
-	    db_table = 'relations_coverage'
-
-
-class RelationsCarimages(models.Model):
-    id_car = models.IntegerField(db_column='id_Car')  # Field name made lowercase.
-    urlimg = models.CharField(db_column='UrlImg', max_length=100)  # Field name made lowercase.
-
-    class Meta:
         managed = False
-        db_table = 'relations_carimages'
+        db_table = 'relations_coverage'
 

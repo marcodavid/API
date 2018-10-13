@@ -25,6 +25,8 @@ class TblClients(models.Model):
 
 
 
+
+
 class TblAddress(models.Model):
     id_clients = models.IntegerField(db_column='id_Clients')  # Field name made lowercase.
     id_address = models.AutoField(db_column='id_Address', primary_key=True)  # Field name made lowercase.
@@ -45,8 +47,8 @@ class TblDriverlicense(models.Model):
     id_clients = models.IntegerField(db_column='id_Clients')  # Field name made lowercase.
     id_driverlicense = models.AutoField(db_column='id_DriverLicense', primary_key=True)  # Field name made lowercase.
     licensenum = models.CharField(db_column='LicenseNum', max_length=10, blank=True, null=True)  # Field name made lowercase.
-    startday = models.IntegerField(db_column='StartDay', blank=True, null=True)  # Field name made lowercase.
-    endday = models.IntegerField(db_column='EndDay', blank=True, null=True)  # Field name made lowercase.
+    startday = models.DateField(db_column='StartDay', blank=True, null=True)  # Field name made lowercase.
+    endday = models.DateField(db_column='EndDay', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False

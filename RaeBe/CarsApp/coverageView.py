@@ -18,37 +18,32 @@ class GenericMethods:
 
 genericMethods = GenericMethods()
 
-# allow to get and post in generic
-class GetCars(ObtainAuthToken):
-	def get(self, request, format=None):
-		snippets = TblCar.objects.all()
-		serializer = CarsSerializer(snippets, many=True)
-		return Response(serializer.data)
 
-class GetCarByID(ObtainAuthToken):
+class GetCoverageByID(ObtainAuthToken):
+
 	def get(self, request,  format = None):
-		pk = request.GET["id_clients"]
-		snippet = TblCar.objects.get(id_clients=pk)
-		serializer = CarsSerializer(snippet)
+		pk = request.GET["id_policy"]
+		snippet = RelationsCoverage.objects.filter(id_policy=pk)
+		serializer = CoverageSerializer(snippet, many = True)
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
-class PostCar(ObtainAuthToken):
+
+
+class PostCoverage(ObtainAuthToken):
 	def post(self, request, format=None):
-		serializer = CarsSerializer(data=request.data)
+		serializer = CoverageSerializer(data=request.data,many= True)
+		print(request.data[1]);
 		if serializer.is_valid():
 			serializer.save()
 			return Response(serializer.data, status=status.HTTP_201_CREATED)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class PutCarForUpdate(ObtainAuthToken):
+class PutCoverageForUpdate(ObtainAuthToken):
 	def put(self, request, format=None):
-		pk = request.data.get("id_clients")
-		snippet = genericMethods.get_object(pk)
-		serializer = CarsSerializer(snippet, data=request.data)
+		pk = request.data.get("id_policy")
+		snippet = RelationsCoverage.objects.filter(id_policy=pk)
+		serializer = CoverageSerializer(snippet,data=request.data,many = True)
 		if serializer.is_valid():
 			serializer.save()
 			return Response(serializer.data)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-

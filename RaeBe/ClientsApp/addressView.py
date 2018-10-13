@@ -11,7 +11,7 @@ class GenericMethods:
 
 	def get_object(self, pk):
 		try:
-			return TblAddress.objects.get(id_address=pk)
+			return TblAddress.objects.get(id_clients=pk)
 		except TblAddress.DoesNotExist:
 			raise Http404
 
@@ -33,14 +33,14 @@ class PostAddress(ObtainAuthToken):
 
 class GetAddressByClient(ObtainAuthToken):
 	def get(self, request,  format = None):
-		pk = request.data.get("id_clients")
+		pk = request.GET["id_clients"]
 		snippet = genericMethods.get_object(pk)
 		serializer = AddressSerializer(snippet)
 		return Response(serializer.data)
 
 class PutAddressForUpdate(ObtainAuthToken):
 	def put(self, request, format=None):
-		pk = request.data.get("id_address")
+		pk = request.data.get("id_clients")
 		snippet = genericMethods.get_object(pk)
 		serializer = AddressSerializer(snippet, data=request.data)
 		if serializer.is_valid():
