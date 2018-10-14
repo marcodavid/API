@@ -19,7 +19,7 @@ urlpatterns = [
     url(r'^PostCoverage/$', coverageView.PostCoverage.as_view()),  # get all cars
     url(r'^GetCoverageByID/$', coverageView.GetCoverageByID.as_view()),  # get all cars
     url(r'^PutCoverageForUpdate/$', coverageView.PutCoverageForUpdate.as_view()),  # get all cars
-
+    url(r'^DeleteCoverage/$', coverageView.DeleteCoverage.as_view()),  # get all cars
 
 ]
 

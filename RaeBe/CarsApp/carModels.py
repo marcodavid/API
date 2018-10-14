@@ -39,10 +39,14 @@ class TblCar(models.Model):
     sparetier = models.IntegerField(db_column='SpareTier')  # Field name made lowercase.
     alarm = models.IntegerField(db_column='Alarm')  # Field name made lowercase.
     sensor = models.IntegerField(db_column='Sensor')  # Field name made lowercase.
+    travelout = models.IntegerField(db_column='travelOut')  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'tbl_car'
+
+
+
 
 
 class RelationsCarimages(models.Model):
