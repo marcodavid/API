@@ -40,6 +40,7 @@ REST_FRAMEWORK = {
 INSTALLED_APPS = [
     'CarsApp.apps.CarsappConfig',
 	'ClientsApp.apps.RaebeapiConfig',
+    'RentersApp.apps.RentersappConfig',
 	'django.contrib.admin',
 	'django.contrib.auth',
 	'django.contrib.contenttypes',

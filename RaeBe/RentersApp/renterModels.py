@@ -28,3 +28,16 @@ class TblRent(models.Model):
     class Meta:
         managed = False
         db_table = 'tbl_rent'
+        
+class TblRentpreferences(models.Model):
+    id_clients = models.IntegerField()
+    firsthour = models.IntegerField(db_column='firstHour')  # Field name made lowercase.
+    lasthour = models.IntegerField(db_column='lastHour')  # Field name made lowercase.
+    daysbeforerent = models.IntegerField(db_column='daysBeforeRent')  # Field name made lowercase.
+    mintime = models.IntegerField(db_column='minTime')  # Field name made lowercase.
+    maxtime = models.IntegerField(db_column='maxTime')  # Field name made lowercase.
+    id_rentpreferences = models.AutoField(db_column='id_rentPreferences', primary_key=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'tbl_rentpreferences'
