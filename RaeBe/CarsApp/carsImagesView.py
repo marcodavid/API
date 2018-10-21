@@ -21,7 +21,7 @@ genericMethods = GenericMethods()
 
 class PostCarImages(ObtainAuthToken):
 		def post(self, request, format=None):
-			serializer = CarsSerializer(data=request.files)
+			serializer = FileSerializer(data=request.data)
 			if serializer.is_valid():
 				serializer.save()
 				return Response(serializer.data, status=status.HTTP_201_CREATED)

@@ -86,3 +86,7 @@ class RelationsCoverage(models.Model):
         managed = False
         db_table = 'relations_coverage'
 
+class File(models.Model):
+  file = models.FileField(blank=False, null=False)
+  remark = models.CharField(max_length=20)
+  timestamp = models.DateTimeField(auto_now_add=True)

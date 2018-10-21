@@ -22,6 +22,13 @@ class PolicySerializer(serializers.ModelSerializer):
         model = TblPolicy
         fields = '__all__'
 
+
+class FileSerializer(serializers.ModelSerializer):
+  class Meta():
+    model = File
+    fields = ('file', 'remark', 'timestamp')
+
+
 class CoverageSerializer(serializers.ModelSerializer):
     def __init__(self, *args, **kwargs):
         many = kwargs.pop('many', True)

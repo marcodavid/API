@@ -21,6 +21,8 @@ urlpatterns = [
     url(r'^PutCoverageForUpdate/$', coverageView.PutCoverageForUpdate.as_view()),  # get all cars
     url(r'^DeleteCoverage/$', coverageView.DeleteCoverage.as_view()),  # get all cars
 
+
+
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
