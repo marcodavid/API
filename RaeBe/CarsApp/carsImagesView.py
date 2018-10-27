@@ -27,6 +27,15 @@ class PostCarImages(ObtainAuthToken):
 				return Response(serializer.data, status=status.HTTP_201_CREATED)
 			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class PutActiveImages(ObtainAuthToken):
+	def put(self, request, format=None):
+		pk = request.data.get ("id_clients")
+		snippet = File.objects.filter(id_clients=pk)
+		serializer = CarsImagesSerializer (snippet, data=request.data)
+		if serializer.is_valid ():
+			serializer.save(isValid=1)
+			return Response (serializer.data)
+		return Response (serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 
