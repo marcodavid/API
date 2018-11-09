@@ -8,6 +8,7 @@ from .  import driverLicenseView
 #both for each view
 urlpatterns = [
     url(r'^GetClients/$', clientViews.GetClients.as_view()),#get all users,
+    url (r'^GetRandomClients/$', clientViews.GetRandomClients.as_view ()),  # get all users,
     url(r'^PostClientToSign/$', clientViews.PostClientToSign.as_view()),#post new user you only need pass  and email
     url(r'^PostClientToLogin/$', clientViews.PostClientToLogin.as_view()),  #post email and password(login)  and response  json with all user information
     url(r'^PutClientForUpdate/$', clientViews.PutClientForUpdate.as_view()),

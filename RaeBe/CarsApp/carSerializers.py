@@ -24,7 +24,7 @@ class PolicySerializer(serializers.ModelSerializer):
 
 
 class FileSerializer(serializers.ModelSerializer):
-  class Meta():
+  class Meta:
     model = File
     fields = '__all__'
 

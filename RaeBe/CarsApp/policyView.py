@@ -43,8 +43,7 @@ class PostPolicy(ObtainAuthToken):
 class PutPolicyForUpdate(ObtainAuthToken):
 	def put(self, request, format=None):
 		pk = request.data.get("id_car")
-		snippet = genericMethods.objects.all()
-		snippet.fil
+		snippet = genericMethods.get_object(pk)
 		serializer = PolicySerializer(snippet, data=request.data)
 		if serializer.is_valid():
 			serializer.save()

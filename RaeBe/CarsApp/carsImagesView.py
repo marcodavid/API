@@ -18,6 +18,12 @@ class GenericMethods:
 
 genericMethods = GenericMethods()
 
+class GetCarImagesByID(ObtainAuthToken):
+	def get(self, request,  format = None):
+		pk = request.GET["id_clients"]
+		snippet =File.objects.all().filter(id_clients=pk)
+		serializer = FileSerializer(snippet,many=True)
+		return Response(serializer.data, status=status.HTTP_200_OK)
 
 class PostCarImages(ObtainAuthToken):
 		def post(self, request, format=None):
