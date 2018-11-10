@@ -32,6 +32,13 @@ class GetRentByID(ObtainAuthToken):
 		serializer = RenterSerializer(snippet,many=True)
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
+class GetRentByIdClients(ObtainAuthToken):
+	def get(self, request,  format = None):
+		pk = request.GET["id_clients"]
+		snippet = TblRent.objects.all().filter(id_clients=pk)
+		serializer = RenterSerializer(snippet,many=True)
+		return Response(serializer.data, status=status.HTTP_200_OK)
+
 class PostRent(ObtainAuthToken):
 	def post(self, request, format=None):
 		serializer = RenterSerializer(data=request.data)

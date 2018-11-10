@@ -27,6 +27,7 @@ class TblRent(models.Model):
     isover = models.IntegerField(db_column='isOver')  # Field name made lowercase.
     price = models.FloatField(db_column='price')
     iva = models.FloatField(db_column='iva')
+    totaldays = models.IntegerField (db_column='totaldays')
     totalprice = models.FloatField(db_column='totalPrice')  # Field name made lowercase.
     gain = models.FloatField(db_column='gain')
     pricexiva = models.FloatField (db_column='priceXiva')  # Field name made lowercase.
