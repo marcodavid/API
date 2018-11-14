@@ -10,7 +10,9 @@ urlpatterns = [
     url(r'^GetCarByID/$', carsViews.GetCarByID.as_view()),  # post a car
     url(r'^PutCarForUpdate/$', carsViews.PutCarForUpdate.as_view()),  # post a car
     url(r'^PostCarImages/$', carsImagesView.PostCarImages.as_view()),  # get all car
+
     url (r'^GetCarImagesByID/$', carsImagesView.GetCarImagesByID.as_view ()),  # post a car
+    url (r'^DeleteImage/$', carsImagesView.DeleteImage.as_view ()),  # post a car
 
     url(r'^GetPolicy/$', policyView.GetPolicy.as_view()),  # get all cars
     url(r'^PostPolicy/$', policyView.PostPolicy.as_view()),  # get all cars

@@ -45,4 +45,16 @@ class PutActiveImages(ObtainAuthToken):
 
 
 
-
+class DeleteImage(ObtainAuthToken):
+	def delete(self, request, format=None):  # delete info details
+		pk = request.GET["id_clients"]
+		type = request.GET["type"]
+		id = request.GET["idFile"]
+		snippet = File.objects.filter(id_clients=pk)
+		sinippet = snippet.filter (type=type)
+		if type == "1":
+			snippet = snippet.filter(id=id)
+			snippet.delete()
+		else:
+			snippet.delete ()
+		return Response(status=status.HTTP_204_NO_CONTENT)

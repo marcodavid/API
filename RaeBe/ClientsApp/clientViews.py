@@ -44,8 +44,15 @@ genericMethods = GenericMethods()
 
 class GetClients(ObtainAuthToken):
 	def get(self, request, format=None):
-		snippets = TblClients.objects.all()
+		snippets = TblClients.objects.all().filter(isrenter=1)
 		serializer = ClientsSerializer(snippets, many=True)
+		return Response(serializer.data)
+
+class GetClientsByID(ObtainAuthToken):
+	def get(self, request, format=None):
+		pk = request.GET["id_clients"]
+		snippets = genericMethods.get_object(pk)
+		serializer = ClientsSerializer(snippets)
 		return Response(serializer.data)
 
 class GetRandomClients(ObtainAuthToken):
