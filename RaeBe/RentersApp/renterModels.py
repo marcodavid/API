@@ -48,3 +48,14 @@ class TblRentpreferences(models.Model):
     class Meta:
         managed = False
         db_table = 'tbl_rentpreferences'
+
+class RelationsComments(models.Model):
+    id_messages = models.AutoField(primary_key=True)
+    id_clientsreceiver = models.IntegerField(db_column='id_ClientsReceiver')  # Field name made lowercase.
+    id_clientscommenter = models.IntegerField(db_column='id_ClientsCommenter')  # Field name made lowercase.
+    comment = models.CharField(db_column='Comment', max_length=500)  # Field name made lowercase.
+    rate = models.IntegerField(db_column='Rate')  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'relations_comments'

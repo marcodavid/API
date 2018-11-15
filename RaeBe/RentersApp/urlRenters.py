@@ -11,6 +11,9 @@ urlpatterns = [
     url(r'^GetRentPreferencesByClient/$', rentPreferencesView.GetRentPreferencesByClient.as_view()),#get all users,
 	url(r'^PostRentPreferences/$', rentPreferencesView.PostRentPreferences.as_view()),  # get all users,
 	url(r'^PutRentPreferencesForUpdate/$', rentPreferencesView.PutRentPreferencesForUpdate.as_view()),
+
+	url (r'^GetRateByIdClients/$', renterViews.GetRateByIdClients.as_view ()),  # get all users,
+	url (r'^PostRate/$', renterViews.PostRate.as_view ()),  # get all users,
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

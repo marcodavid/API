@@ -14,3 +14,10 @@ class RentPreferencesSerializer(serializers.ModelSerializer):
     class Meta:
         model = TblRentpreferences
         fields = '__all__'
+
+class RateSerializer(serializers.ModelSerializer):
+
+
+    class Meta:
+        model = RelationsComments
+        fields = '__all__'

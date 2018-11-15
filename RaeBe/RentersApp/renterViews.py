@@ -58,3 +58,17 @@ class PutRentForUpdate(ObtainAuthToken):
 			return Response(serializer.data)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+class GetRateByIdClients(ObtainAuthToken):
+	def get(self, request,  format = None):
+		pk = request.GET["id_clients"]
+		snippet = RelationsComments.objects.all().filter(id_clientsreceiver=pk)
+		serializer = RateSerializer(snippet,many=True)
+		return Response(serializer.data, status=status.HTTP_200_OK)
+
+class PostRate(ObtainAuthToken):
+	def post(self, request, format=None):
+		serializer = RateSerializer(data=request.data)
+		if serializer.is_valid():
+			serializer.save()
+			return Response(serializer.data, status=status.HTTP_201_CREATED)
+		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
