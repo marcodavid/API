@@ -87,12 +87,14 @@ class RelationsCoverage(models.Model):
         managed = False
         db_table = 'relations_coverage'
 
-class File(models.Model):
-  file = models.FileField(db_column='file',blank=False, null=False)
-  id_clients = models.CharField(db_column='id_clients',max_length=20)
-  timestamp = models.DateTimeField(db_column='timestamp',auto_now_add=True)
-  type = models.IntegerField ()
 
-  class Meta:
-      managed = False
-      db_table = 'carsapp_file'
+
+class TblFile (models.Model):
+          file = models.FileField (db_column='file',blank=False, null=False)
+          id_clients = models.CharField (db_column='id_clients',max_length=20)
+          timestamp = models.DateTimeField (db_column='timestamp',auto_now_add=True)
+          type = models.IntegerField ()
+
+          class Meta:
+              managed = False
+              db_table = 'tbl_file'

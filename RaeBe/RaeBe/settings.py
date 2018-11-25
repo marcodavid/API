@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'RaeBe.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'raebems$raebe-db',
+        'NAME': 'raebems$raebe_db',
        'USER': 'raebems',
        'PASSWORD':'Qpass123',
         'HOST': 'raebems.mysql.pythonanywhere-services.com',
