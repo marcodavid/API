@@ -25,7 +25,7 @@ SECRET_KEY = ')_szupr*y^mm(^h&ggt61h#@n8c7eb=cmbap*#0601@&!-5e+='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','raebems.pythonanywhere.com']
 
 
 # Application definition
@@ -38,21 +38,23 @@ REST_FRAMEWORK = {
 }
 
 INSTALLED_APPS = [
+        'corsheaders',
     'CarsApp.apps.CarsappConfig',
-	'ClientsApp.apps.RaebeapiConfig',
+        'ClientsApp.apps.RaebeapiConfig',
     'RentersApp.apps.RentersappConfig',
-	'django.contrib.admin',
-	'django.contrib.auth',
-	'django.contrib.contenttypes',
-	'django.contrib.sessions',
-	'django.contrib.messages',
-	'django.contrib.staticfiles',
-	'rest_framework',
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'rest_framework',
     'rest_framework.authtoken',
 ]
 
-
 MIDDLEWARE = [
+        'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -61,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'RaeBe.urls'
 
@@ -89,11 +92,11 @@ WSGI_APPLICATION = 'RaeBe.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'raebeuser',
-        'USER': 'raebeuser',
-       'PASSWORD': 'Qpass123',
-        'HOST': 'db4free.net',
-
+        'NAME': 'raebems$raebe-db',
+       'USER': 'raebems',
+       'PASSWORD':'Qpass123',
+        'HOST': 'raebems.mysql.pythonanywhere-services.com',
+        'PORT':'3306'
     }
 }
 
@@ -142,3 +145,5 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','raebems.pythonanywhere.com']
