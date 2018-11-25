@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99485109-a0f3-4cf8-90d1-d10c86acdbc3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/RaeBe/ClientsApp/locationView.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/RaeBe/media/mail assets/RaeBe.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RaeBe/requirements.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RaeBe/runtime.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RaeBe/web.config" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/RaeBe.zip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/RaeBe/ClientsApp/clientModels.py" afterPath="$PROJECT_DIR$/RaeBe/ClientsApp/clientModels.py" />
-      <change beforePath="$PROJECT_DIR$/RaeBe/ClientsApp/clientSerializers.py" afterPath="$PROJECT_DIR$/RaeBe/ClientsApp/clientSerializers.py" />
-      <change beforePath="$PROJECT_DIR$/RaeBe/ClientsApp/urlClients.py" afterPath="$PROJECT_DIR$/RaeBe/ClientsApp/urlClients.py" />
+      <change beforePath="$PROJECT_DIR$/RaeBe/CarsApp/carModels.py" afterPath="$PROJECT_DIR$/RaeBe/CarsApp/carModels.py" />
       <change beforePath="$PROJECT_DIR$/RaeBe/RaeBe/settings.py" afterPath="$PROJECT_DIR$/RaeBe/RaeBe/settings.py" />
-      <change beforePath="$PROJECT_DIR$/RaeBe/RentersApp/renterModels.py" afterPath="$PROJECT_DIR$/RaeBe/RentersApp/renterModels.py" />
-      <change beforePath="$PROJECT_DIR$/RaeBe/RentersApp/renterViews.py" afterPath="$PROJECT_DIR$/RaeBe/RentersApp/renterViews.py" />
-      <change beforePath="$PROJECT_DIR$/RaeBe/RentersApp/urlRenters.py" afterPath="$PROJECT_DIR$/RaeBe/RentersApp/urlRenters.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,18 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="clientViews.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/clientViews.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#1#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="locationView.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/locationView.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,16 +40,16 @@
               <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
               <folding>
                 <element signature="e#1#34#0" expanded="true" />
-                <marker date="1542566891049" expanded="true" signature="1916:1938" ph="..." />
+                <marker date="1543105420996" expanded="true" signature="1916:1938" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="renterModels.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="renterModels.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RaeBe/RentersApp/renterModels.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="75">
               <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
@@ -75,45 +58,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientModels.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/clientModels.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urlClients.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/urlClients.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="50" lean-forward="false" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-              <folding>
-                <element signature="e#2#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="driverLicenseView.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/driverLicenseView.py">
+      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaeBe/permissions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="17" selection-end-column="33" />
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaeBe/RaeBe/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="94" column="17" lean-forward="false" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carModels.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carModels.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="530">
+              <caret line="93" column="46" lean-forward="false" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaeBe/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaeBe/web.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runtime.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RaeBe/runtime.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RaeBe/RaeBe/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#1#33#0" expanded="true" />
+                <element signature="e#0#220#1" expanded="true" />
+                <element signature="e#222#231#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,9 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/API/API/urls.py" />
-        <option value="$PROJECT_DIR$/API/rest/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/API/rest/views.py" />
         <option value="$PROJECT_DIR$/API/rest/serializer.py" />
         <option value="$PROJECT_DIR$/API/rest/models.py" />
         <option value="$PROJECT_DIR$/API/rest/admin.py" />
@@ -209,12 +218,10 @@
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/policyView.py" />
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/carSerializers.py" />
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/carsViews.py" />
-        <option value="$PROJECT_DIR$/RaeBe/CarsApp/carModels.py" />
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py" />
         <option value="$PROJECT_DIR$/RaeBe/CarsApp/carsImagesView.py" />
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/clientViews.py" />
         <option value="$PROJECT_DIR$/RaeBe/RentersApp/renterSerializers.py" />
-        <option value="$PROJECT_DIR$/RaeBe/RaeBe/settings.py" />
         <option value="$PROJECT_DIR$/RaeBe/RentersApp/urlRenters.py" />
         <option value="$PROJECT_DIR$/RaeBe/RentersApp/renterViews.py" />
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/clientSerializers.py" />
@@ -222,6 +229,11 @@
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/urlClients.py" />
         <option value="$PROJECT_DIR$/RaeBe/ClientsApp/locationView.py" />
         <option value="$PROJECT_DIR$/RaeBe/RentersApp/renterModels.py" />
+        <option value="$PROJECT_DIR$/RaeBe/RaeBe/settings.py" />
+        <option value="$PROJECT_DIR$/RaeBe/CarsApp/carModels.py" />
+        <option value="$PROJECT_DIR$/RaeBe/requirements.txt" />
+        <option value="$PROJECT_DIR$/RaeBe/web.config" />
+        <option value="$PROJECT_DIR$/RaeBe/runtime.txt" />
       </list>
     </option>
   </component>
@@ -269,6 +281,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,12 +294,17 @@
               <item name="API" type="462c0819:PsiDirectoryNode" />
               <item name="RaeBe" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="API" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="RaeBe" type="462c0819:PsiDirectoryNode" />
+              <item name="RaeBe" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,14 +385,14 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2514881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2514881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3256579" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51644737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39802632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -434,34 +452,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/RaeBe/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/ClientsApp/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -508,13 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -612,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carModels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/urlCars.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -654,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RaeBe/RaeBe/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/RentersApp/urlRenters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -693,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +670,7 @@
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="e#1#33#0" expanded="true" />
+            <element signature="e#1#33#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -751,17 +719,76 @@
           <caret line="59" column="23" lean-forward="false" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
           <folding>
             <element signature="e#1#34#0" expanded="true" />
-            <marker date="1542566891049" expanded="true" signature="1916:1938" ph="..." />
+            <marker date="1543105420996" expanded="true" signature="1916:1938" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RaeBe/RentersApp/renterModels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="75">
           <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/CarsApp/carModels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="93" column="46" lean-forward="false" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/RaeBe/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="94" column="17" lean-forward="false" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RaeBe/RaeBe/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#220#1" expanded="true" />
+            <element signature="e#222#231#0" expanded="true" />
           </folding>
         </state>
       </provider>

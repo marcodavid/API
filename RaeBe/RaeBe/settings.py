@@ -89,10 +89,10 @@ WSGI_APPLICATION = 'RaeBe.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'raebe_db',
-        'USER': 'root3',
-       'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'raebeuser',
+        'USER': 'raebeuser',
+       'PASSWORD': 'Qpass123',
+        'HOST': 'db4free.net',
 
     }
 }
