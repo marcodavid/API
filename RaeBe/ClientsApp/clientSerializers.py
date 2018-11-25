@@ -69,3 +69,7 @@ class DriverLicenseSerializer(serializers.ModelSerializer):
         model = TblDriverlicense
         fields = '__all__'
 
+class LocationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TblLocation
+        fields = '__all__'

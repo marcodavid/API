@@ -87,17 +87,21 @@ WSGI_APPLICATION = 'RaeBe.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+   'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'raebe_db',
         'USER': 'root3',
-        'PASSWORD': '',
+       'PASSWORD': '',
         'HOST': 'localhost',
 
     }
 }
 
-
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'raebems@gmail.com'
+EMAIL_HOST_PASSWORD = 'chinguesumadreerick'
+EMAIL_PORT = 587
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 

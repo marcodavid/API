@@ -8,7 +8,9 @@ urlpatterns = [
 	url(r'^PostRent/$', renterViews.PostRent.as_view()),  # get all users,
 	url(r'^PutRentForUpdate/$', renterViews.PutRentForUpdate.as_view()),  # get all users,
 
-    url(r'^GetRentPreferencesByClient/$', rentPreferencesView.GetRentPreferencesByClient.as_view()),#get all users,
+	url (r'^PostMail/$', renterViews.PostMail.as_view ()),  # get all users,
+
+	url(r'^GetRentPreferencesByClient/$', rentPreferencesView.GetRentPreferencesByClient.as_view()),#get all users,
 	url(r'^PostRentPreferences/$', rentPreferencesView.PostRentPreferences.as_view()),  # get all users,
 	url(r'^PutRentPreferencesForUpdate/$', rentPreferencesView.PutRentPreferencesForUpdate.as_view()),
 

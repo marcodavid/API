@@ -4,7 +4,8 @@ from django.http import *
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.authtoken.views import ObtainAuthToken
-
+from email.mime.image import MIMEImage
+from django.core.mail import EmailMultiAlternatives
 
 class GenericMethods:
 
@@ -44,8 +45,29 @@ class PostRent(ObtainAuthToken):
 		serializer = RenterSerializer(data=request.data)
 		if serializer.is_valid():
 			serializer.save()
+
 			return Response(serializer.data, status=status.HTTP_201_CREATED)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class PostMail(ObtainAuthToken):
+	def post(self, request, format=None):
+		email = request.data.get ("email")
+		body = request.data.get ("body")
+		title = request.data.get ("title")
+		subject, from_email, to = title , 'raebems@gmail.com', email
+		text_content = 'Mensaje importante'
+
+		html_content = body
+		msg = EmailMultiAlternatives (subject, text_content, from_email, [to])
+		msg.attach_alternative (html_content, "text/html")
+		msg.content_subtype = 'html'  # set primary content to be text/html
+		msg.mixed_subtype = 'related'  # it is important part that ensures embedding of image
+
+		with open ("media/mail assets/RaeBe.png", mode='rb') as f:
+			image = MIMEImage (f.read ())
+			msg.attach (image)
+		msg.send ()
+		return Response(status=status.HTTP_200_OK)
 
 
 class PutRentForUpdate(ObtainAuthToken):

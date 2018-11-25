@@ -5,6 +5,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from .  import clientViews
 from .  import addressView
 from .  import driverLicenseView
+from .  import locationView
 #both for each view
 urlpatterns = [
     url(r'^GetClients/$', clientViews.GetClients.as_view()),#get all users,
@@ -25,6 +26,15 @@ urlpatterns = [
     url(r'^PostDriverLicense/$', driverLicenseView.PostDriverLicense.as_view()),  # get all address ,post new address
     url(r'^PutDriverLicenseForUpdate/$', driverLicenseView.PutDriverLicenseForUpdate.as_view()),  # get all address ,post new address
     url(r'^DeleteDriverLicense/$', driverLicenseView.DeleteDriverLicense.as_view()),  # get all address ,post new address
+
+    url (r'^GetLocations/$', locationView.GetLocations.as_view ()),  # get all users,
+    url (r'^GetLocationByID/$', locationView.GetLocationByClient.as_view ()),
+    # get all address ,post new address
+    url (r'^PostLocation/$', locationView.PostLocation.as_view ()),  # get all address ,post new address
+    url (r'^PutLocationForUpdate/$', locationView.PutLocationForUpdate.as_view ()),
+    # get all address ,post new address
+    url (r'^DeleteLocation/$', locationView.DeleteLocation.as_view ()),
+    # get all address ,post new address
 
 ]
 

@@ -31,6 +31,8 @@ class TblRent(models.Model):
     totalprice = models.FloatField(db_column='totalPrice')  # Field name made lowercase.
     gain = models.FloatField(db_column='gain')
     pricexiva = models.FloatField (db_column='priceXiva')  # Field name made lowercase.
+    comments = models.TextField(db_column='comments',blank=True, null=True)
+
     class Meta:
         managed = False
         db_table = 'tbl_rent'
