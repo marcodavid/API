@@ -8,6 +8,7 @@ from django.db import models
 class TblCar(models.Model):
     id_clients = models.IntegerField(db_column='id_Clients')  # Field name made lowercase.
     id_car = models.CharField(db_column='id_Car', primary_key=True, max_length=11)  # Field name made lowercase.
+    price = models.FloatField(db_column='price')
     brand = models.CharField(db_column='Brand', max_length=30)  # Field name made lowercase.
     model = models.CharField(db_column='Model', max_length=30)  # Field name made lowercase.
     year = models.IntegerField(db_column='Year')  # Field name made lowercase.
@@ -39,10 +40,14 @@ class TblCar(models.Model):
     sparetier = models.IntegerField(db_column='SpareTier')  # Field name made lowercase.
     alarm = models.IntegerField(db_column='Alarm')  # Field name made lowercase.
     sensor = models.IntegerField(db_column='Sensor')  # Field name made lowercase.
+    travelout = models.IntegerField(db_column='travelOut')  # Field name made lowercase.
 
     class Meta:
         managed = False
         db_table = 'tbl_car'
+
+
+
 
 
 class RelationsCarimages(models.Model):
@@ -82,3 +87,8 @@ class RelationsCoverage(models.Model):
         managed = False
         db_table = 'relations_coverage'
 
+class File(models.Model):
+  file = models.FileField(blank=False, null=False)
+  id_clients = models.CharField(max_length=20)
+  timestamp = models.DateTimeField(auto_now_add=True)
+  type = models.IntegerField ()

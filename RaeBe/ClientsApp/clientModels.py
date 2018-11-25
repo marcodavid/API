@@ -54,3 +54,12 @@ class TblDriverlicense(models.Model):
         managed = False
         db_table = 'tbl_driverlicense'
 
+class TblLocation(models.Model):
+    id_location = models.AutoField(primary_key=True)
+    id_clients = models.IntegerField()
+    lat = models.CharField (max_length=16)
+    lng = models.CharField (max_length=16)
+
+    class Meta:
+        managed = False
+        db_table = 'tbl_location'
